@@ -1,0 +1,15 @@
+18:01:10 **** Build of configuration Release for project linked_list_arm ****
+make all 
+Building file: ../src/linked_list_arm.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/linked_list_arm.d" -MT"src/linked_list_arm.o" -o "src/linked_list_arm.o" "../src/linked_list_arm.cpp"
+Finished building: ../src/linked_list_arm.cpp
+ 
+Building target: linked_list_arm
+Invoking: GCC C++ Linker
+g++  -o "linked_list_arm"  ./src/linked_list_arm.o   
+Finished building target: linked_list_arm
+ 
+
+18:01:10 Build Finished. 0 errors, 0 warnings. (took 586ms)
+

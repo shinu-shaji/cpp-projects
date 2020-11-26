@@ -1,0 +1,15 @@
+18:06:27 **** Build of configuration Release for project linkedlist_arm ****
+make all 
+Building file: ../src/linkedlist_arm.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/linkedlist_arm.d" -MT"src/linkedlist_arm.o" -o "src/linkedlist_arm.o" "../src/linkedlist_arm.cpp"
+Finished building: ../src/linkedlist_arm.cpp
+ 
+Building target: linkedlist_arm
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "linkedlist_arm"  ./src/linkedlist_arm.o   
+Finished building target: linkedlist_arm
+ 
+
+18:06:28 Build Finished. 0 errors, 0 warnings. (took 635ms)
+

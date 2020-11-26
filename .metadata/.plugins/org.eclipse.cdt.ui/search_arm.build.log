@@ -1,0 +1,15 @@
+21:12:36 **** Incremental Build of configuration Debug for project search_arm ****
+make all 
+Building file: ../src/search_arm.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/search_arm.d" -MT"src/search_arm.o" -o "src/search_arm.o" "../src/search_arm.cpp"
+Finished building: ../src/search_arm.cpp
+ 
+Building target: search_arm
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "search_arm"  ./src/search_arm.o   
+Finished building target: search_arm
+ 
+
+21:12:39 Build Finished. 0 errors, 0 warnings. (took 2s.931ms)
+

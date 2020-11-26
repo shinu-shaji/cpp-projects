@@ -1,0 +1,6 @@
+16:41:08 **** Incremental Build of configuration Release for project double_linked list ****
+make all 
+make: Nothing to be done for 'all'.
+
+16:41:08 Build Finished. 0 errors, 0 warnings. (took 75ms)
+

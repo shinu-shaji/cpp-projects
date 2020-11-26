@@ -1,0 +1,42 @@
+08:24:47 **** Incremental Build of configuration Debug for project gameoflife ****
+make all 
+Building file: ../src/cells.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/cells.d" -MT"src/cells.o" -o "src/cells.o" "../src/cells.c"
+../src/cells.c: In function ‘updateCell’:
+../src/cells.c:156:9: warning: unused variable ‘state_cell’ [-Wunused-variable]
+  cell_t state_cell = env[r][c];
+         ^~~~~~~~~~
+Finished building: ../src/cells.c
+ 
+Building target: gameoflife
+Invoking: GCC C Linker
+gcc  -o "gameoflife"  ./src/cells.o ./src/display.o ./src/gameoflife.o ./src/gol.o   
+./src/gol.o: In function `main':
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/gol.c:34: multiple definition of `main'
+./src/gameoflife.o:/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/gameoflife.c:14: first defined here
+makefile:30: recipe for target 'gameoflife' failed
+./src/display.o: In function `create_newwin':
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:30: undefined reference to `newwin'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:31: undefined reference to `wborder'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:34: undefined reference to `wrefresh'
+./src/display.o: In function `initDisplay':
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:46: undefined reference to `initscr'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:47: undefined reference to `cbreak'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:48: undefined reference to `stdscr'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:48: undefined reference to `wtimeout'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:49: undefined reference to `stdscr'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:49: undefined reference to `keypad'
+./src/display.o: In function `updateDisplay':
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:59: undefined reference to `wclear'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:63: undefined reference to `wmove'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:63: undefined reference to `waddch'
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/display.c:64: undefined reference to `wrefresh'
+./src/gol.o: In function `main':
+/home/shinu/asd/eclipse-workspace/gameoflife/Debug/../src/gol.c:52: undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make: *** [gameoflife] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+08:24:48 Build Failed. 18 errors, 1 warnings. (took 217ms)
+

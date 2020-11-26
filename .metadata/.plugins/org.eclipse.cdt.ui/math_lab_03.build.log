@@ -1,0 +1,19 @@
+18:33:34 **** Build of configuration Debug for project math_lab_03 ****
+make all 
+Building file: ../src/math_lab_03.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/math_lab_03.d" -MT"src/math_lab_03.o" -o "src/math_lab_03.o" "../src/math_lab_03.cpp"
+../src/math_lab_03.cpp: In function ‘int main()’:
+../src/math_lab_03.cpp:51:17: warning: unused variable ‘cff’ [-Wunused-variable]
+ float coff[t_n],cff=1;
+                 ^~~
+Finished building: ../src/math_lab_03.cpp
+ 
+Building target: math_lab_03
+Invoking: GCC C++ Linker
+g++  -o "math_lab_03"  ./src/math_lab_03.o   
+Finished building target: math_lab_03
+ 
+
+18:33:35 Build Finished. 0 errors, 1 warnings. (took 530ms)
+

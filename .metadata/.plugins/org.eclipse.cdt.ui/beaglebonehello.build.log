@@ -1,0 +1,15 @@
+18:33:26 **** Incremental Build of configuration Debug for project beaglebonehello ****
+make all 
+Building file: ../src/beaglebonehello.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/beaglebonehello.d" -MT"src/beaglebonehello.o" -o "src/beaglebonehello.o" "../src/beaglebonehello.cpp"
+Finished building: ../src/beaglebonehello.cpp
+ 
+Building target: beaglebonehello
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "beaglebonehello"  ./src/beaglebonehello.o   
+Finished building target: beaglebonehello
+ 
+
+18:33:29 Build Finished. 0 errors, 0 warnings. (took 2s.928ms)
+

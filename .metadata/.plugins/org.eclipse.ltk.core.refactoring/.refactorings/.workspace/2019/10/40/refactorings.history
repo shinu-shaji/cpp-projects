@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;average_no&apos; to &apos;pattern&apos;" description="Rename resource &apos;average_no&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/average_no" name="pattern" stamp="1570203465707" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;average&apos; to &apos;pattern_1&apos;" description="Rename resource &apos;average&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/average" name="pattern_1" stamp="1570203498160" updateReferences="true"/>
+</session>

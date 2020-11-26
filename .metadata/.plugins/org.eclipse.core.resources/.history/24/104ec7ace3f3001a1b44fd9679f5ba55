@@ -1,0 +1,98 @@
+//============================================================================
+// Name        : hashtablecpp.cpp
+// Author      : shinu
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+using namespace std;
+struct node{
+	string name;
+	node *next;
+};
+
+class linkedlist{
+	private:
+
+	public:
+		node *head,*tail;
+		linkedlist(){
+			head=NULL;
+			tail=NULL;
+		}
+		node *return_head(){
+			return head;
+		}
+
+		void createlink(string data){
+			node *temp = new node;
+			temp->name = data;
+			temp->next = NULL;
+			if (head==NULL){
+				head=temp;
+				tail=temp;
+				//printf("%p",temp);
+		//		printf("\n%p",head);
+			//	printf("\n%p",tail);
+			}
+			else{
+				tail->next = temp;
+				tail = temp;
+			}
+
+		}
+
+		void display_link(){
+			node *temp = head;
+			while(temp!=NULL){
+				cout<<"--"<<temp->name;
+				temp = temp->next;
+			}
+
+		}
+		void deletelink(){
+
+		}
+};
+
+class hash_table:linkedlist{
+private:
+	const int size = 10;
+	//node *table[size] = {NULL};
+
+	linkedlist a[size];
+public:
+	int hash_fun(string data){
+		int hash=0;
+		for(int i=0;i<data.length();i++){
+			hash = hash+(int)data[i];
+		}
+		hash = (hash*data[0])%size;
+		return hash;
+	}
+	void make_table(string data){
+		int index = hash_fun(data);
+		a[index].createlink(data);
+	}
+	void display(){
+		for(int i = 0;i<size;i++){
+			a[i].display_link();
+			cout<<endl;
+		}
+
+	}
+
+};
+int main(void) {
+	hash_table table1;
+	table1.make_table("shinu");
+	table1.make_table("shinudg");
+	table1.make_table("shinuat");
+	table1.make_table("shinurt");
+	table1.make_table("shinufk");
+	table1.make_table("shinueu");
+	table1.display();
+}

@@ -1,0 +1,25 @@
+//============================================================================
+// Name        : math_lab_02.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	double x = 10, sum = 1, term = 1, temp = 0;
+	int  i = 0;
+
+	 while (temp != sum) {
+	 i++;
+	 term = term * x / i;
+	 temp = sum;
+	 sum = sum + term;
+	 cout<<"\n"<<i<<" "<<term<<" "<<sum<<" ";
+	 }
+
+	return 0;
+}

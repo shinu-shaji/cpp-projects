@@ -1,0 +1,46 @@
+//============================================================================
+// Name        : c.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+/*
+ ============================================================================
+ Name        : capital_case.c
+ Author      :
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+void printalph(int val){
+			if(val>=97 && val<=122){
+				cout << char(val) ;
+				printalph(val+1);
+			}
+			else if(val>=65 && val<=90){
+				cout<<char(val) ;
+				printalph(val+1);
+
+			}
+}
+
+
+int main(int argc,char* argv[]) {
+	cout<<"you entered"<<endl;
+	cout<<argv[1]<<endl;
+	char val= argv[1];
+	if(val>=97 && val<=122){
+					printalph(97);
+				}
+	else if (val>=65 && val<=90){
+
+					printalph(65);
+				}
+	return 0;
+}

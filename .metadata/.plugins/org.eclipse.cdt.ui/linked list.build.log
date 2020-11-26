@@ -1,0 +1,15 @@
+17:50:14 **** Incremental Build of configuration Release for project linked list ****
+make all 
+Building file: ../src/linked list.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/linked list.d" -MT"src/linked\ list.d" -o "src/linked list.o" "../src/linked list.cpp"
+Finished building: ../src/linked list.cpp
+ 
+Building target: linked list
+Invoking: GCC C++ Linker
+g++  -o "linked list"  ./src/linked\ list.o   
+Finished building target: linked list
+ 
+
+17:50:15 Build Finished. 0 errors, 0 warnings. (took 527ms)
+

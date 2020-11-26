@@ -1,0 +1,15 @@
+13:57:02 **** Incremental Build of configuration Release for project LINKEDLIST_LAB2 ****
+make all 
+Building file: ../src/LINKEDLIST_LAB2.cpp
+Invoking: GCC C++ Compiler
+g++ -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/LINKEDLIST_LAB2.d" -MT"src/LINKEDLIST_LAB2.o" -o "src/LINKEDLIST_LAB2.o" "../src/LINKEDLIST_LAB2.cpp"
+Finished building: ../src/LINKEDLIST_LAB2.cpp
+ 
+Building target: LINKEDLIST_LAB2
+Invoking: GCC C++ Linker
+g++  -o "LINKEDLIST_LAB2"  ./src/LINKEDLIST_LAB2.o   
+Finished building target: LINKEDLIST_LAB2
+ 
+
+13:57:03 Build Finished. 0 errors, 0 warnings. (took 476ms)
+

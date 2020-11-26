@@ -1,0 +1,43 @@
+//============================================================================
+// Name        : hashtablecpp.cpp
+// Author      : shinu
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+using namespace std;
+struct node{
+	string name;
+	node *next;
+};
+
+class linkedlist{
+	private:
+		node *head,*tail;
+	public:
+		linkedlist(){
+			head=NULL;
+			tail=NULL;
+		}
+
+		createlink(){
+
+			int a=8;
+
+		}
+		/*
+		insert_link(string data){
+
+
+		}
+		deletelink(){
+
+		}*/
+};
+
+int main(void) {
+
+}

@@ -1,0 +1,6 @@
+11:28:42 **** Build of configuration Debug for project game of life ****
+make all 
+make: Nothing to be done for 'all'.
+
+11:28:42 Build Finished. 0 errors, 0 warnings. (took 347ms)
+

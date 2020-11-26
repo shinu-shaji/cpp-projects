@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+int fac(int z)
+{
+	int a,fac=1;
+	for(a=1;a<=z;a++)
+		fac=fac*a;
+	return fac;
+}
+int main()
+{
+	float z,Q,sum=0;
+	int a,y,lim;
+
+	printf("Enter the value of z of series: ");
+	scanf("%f",&z);
+
+	printf("Enter the lim : ");
+	scanf("%d",&lim);
+
+	Q=z;
+	z = z*(3.1415/180);
+
+	for(a=1,y=1;a<=lim;a++,y=y+2)
+	{
+		if(a%2!=0)
+		{
+			sum=sum+pow(z,y)/fac(y);
+		}
+		else
+			sum=sum-pow(z,y)/fac(y);
+	}
+
+	printf("Sin(%0.1f): %f",Q,sum);
+	return 0;
+}

@@ -1,0 +1,1 @@
+src/LINKEDLIST_LAB2.o: ../src/LINKEDLIST_LAB2.cpp

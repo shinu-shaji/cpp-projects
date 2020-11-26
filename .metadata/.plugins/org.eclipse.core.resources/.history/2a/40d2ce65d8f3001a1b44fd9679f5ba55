@@ -1,0 +1,84 @@
+//============================================================================
+// Name        : hashtablecpp.cpp
+// Author      : shinu
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+using namespace std;
+struct node{
+	string name;
+	node *next;
+};
+
+class linkedlist{
+	private:
+		node *head,*tail;
+	public:
+		linkedlist(){
+			head=NULL;
+			tail=NULL;
+		}
+		node *return_head(){
+			return head;
+		}
+
+		void createlink(string data){
+			node *temp = new node;
+			temp->name = data;
+			temp->next = NULL;
+			if (head==NULL){
+				head=temp;
+				tail=temp;
+				//printf("%p",temp);
+		//		printf("\n%p",head);
+			//	printf("\n%p",tail);
+			}
+			else{
+				tail->next = temp;
+				tail = temp;
+			}
+
+		}
+
+		void display_link(){
+			node *temp = head;
+			while(temp=NULL){
+				cout<<"--"<<temp->name;
+				temp = temp->next;
+			}
+
+		}
+		void deletelink(){
+
+		}
+};
+
+class hash_table:linkedlist{
+private:
+	const int size = 200;
+	hash_table(){
+		node table[200];
+	}
+public:
+	int hash_fun(string data){
+		int hash=0;
+		for(int i=0;i<data.length();i++){
+			hash = hash+(int)data[i];
+		}
+		hash = (hash*data[0])%size;
+		return hash;
+	}
+	//void
+
+};
+int main(void) {
+	linkedlist a;
+	a.createlink("hai");
+	a.createlink("haasdi");
+	a.createlink("hssai");
+	a.display_link();
+}

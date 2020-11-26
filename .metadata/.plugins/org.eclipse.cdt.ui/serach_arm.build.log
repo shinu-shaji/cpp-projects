@@ -1,0 +1,15 @@
+17:26:55 **** Build of configuration Debug for project serach_arm ****
+make all 
+Building file: ../src/serach_arm.cpp
+Invoking: Cross G++ Compiler
+arm-linux-gnueabihf-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/serach_arm.d" -MT"src/serach_arm.o" -o "src/serach_arm.o" "../src/serach_arm.cpp"
+Finished building: ../src/serach_arm.cpp
+ 
+Building target: serach_arm
+Invoking: Cross G++ Linker
+arm-linux-gnueabihf-g++  -o "serach_arm"  ./src/serach_arm.o   
+Finished building target: serach_arm
+ 
+
+17:26:56 Build Finished. 0 errors, 0 warnings. (took 785ms)
+

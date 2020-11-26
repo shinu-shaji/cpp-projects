@@ -1,0 +1,6 @@
+07:39:26 **** Incremental Build of configuration Release for project newton decomposition ****
+make all 
+make: Nothing to be done for 'all'.
+
+07:39:26 Build Finished. 0 errors, 0 warnings. (took 71ms)
+

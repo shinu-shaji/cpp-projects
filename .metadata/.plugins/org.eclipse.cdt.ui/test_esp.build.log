@@ -1,0 +1,347 @@
+01:20:52 **** Build of configuration Default for project test_esp ****
+make -j4 all 
+/home/shinu/esp/ESP8266_RTOS_SDK/tools/check_python_dependencies.py
+Python requirements from /home/shinu/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+mkdir -p /home/shinu/esp/hello_world/build/include/config
+/home/shinu/esp/ESP8266_RTOS_SDK/tools/kconfig_new/confgen.py --kconfig /home/shinu/esp/ESP8266_RTOS_SDK/Kconfig --config /home/shinu/esp/hello_world/sdkconfig --env "COMPONENT_KCONFIGS=/home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/coap/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_event/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_client/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_server/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_https_ota/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/freemodbus/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/heap/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/log/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/mdns/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/mqtt/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/newlib/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/openssl/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/pthread/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/spiffs/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/vfs/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/wear_levelling/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/wifi_provisioning/Kconfig /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/Kconfig" --env "COMPONENT_KCONFIGS_PROJBUILD=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/Kconfig.projbuild /home/shinu/esp/ESP8266_RTOS_SDK/components/esptool_py/Kconfig.projbuild /home/shinu/esp/ESP8266_RTOS_SDK/components/partition_table/Kconfig.projbuild" --env "IDF_CMAKE=n" --output config /home/shinu/esp/hello_world/sdkconfig --output makefile /home/shinu/esp/hello_world/build/include/config/auto.conf --output header /home/shinu/esp/hello_world/build/include/sdkconfig.h
+touch /home/shinu/esp/hello_world/build/include/config/auto.conf /home/shinu/esp/hello_world/build/include/sdkconfig.h  # ensure newer than sdkconfig
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/partition_table/Makefile.projbuild...
+make -C /home/shinu/esp/hello_world/build/wpa_supplicant -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/component.mk COMPONENT_NAME=wpa_supplicant component_project_vars.mk
+make -C /home/shinu/esp/hello_world/build/wifi_provisioning -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/wifi_provisioning/component.mk COMPONENT_NAME=wifi_provisioning component_project_vars.mk
+make -C /home/shinu/esp/hello_world/build/wear_levelling -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/wear_levelling/component.mk COMPONENT_NAME=wear_levelling component_project_vars.mk
+make -C /home/shinu/esp/hello_world/build/vfs -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/vfs/component.mk COMPONENT_NAME=vfs component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/wear_levelling'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/wifi_provisioning'
+Building component project variables list /home/shinu/esp/hello_world/build/wear_levelling/component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/wifi_provisioning/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/vfs'
+Building component project variables list /home/shinu/esp/hello_world/build/vfs/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/wpa_supplicant'
+Building component project variables list /home/shinu/esp/hello_world/build/wpa_supplicant/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/wifi_provisioning'
+make -C /home/shinu/esp/hello_world/build/tcpip_adapter -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/component.mk COMPONENT_NAME=tcpip_adapter component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/wear_levelling'
+make -C /home/shinu/esp/hello_world/build/tcp_transport -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/tcp_transport/component.mk COMPONENT_NAME=tcp_transport component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/tcpip_adapter'
+Building component project variables list /home/shinu/esp/hello_world/build/tcpip_adapter/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/wpa_supplicant'
+make -C /home/shinu/esp/hello_world/build/spiffs -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/spiffs/component.mk COMPONENT_NAME=spiffs component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/tcp_transport'
+Building component project variables list /home/shinu/esp/hello_world/build/tcp_transport/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/spiffs'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/vfs'
+make -C /home/shinu/esp/hello_world/build/spi_ram -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/spi_ram/component.mk COMPONENT_NAME=spi_ram component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/spiffs/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/spi_ram'
+Building component project variables list /home/shinu/esp/hello_world/build/spi_ram/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/tcp_transport'
+make -C /home/shinu/esp/hello_world/build/spi_flash -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/component.mk COMPONENT_NAME=spi_flash component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/spi_flash'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/tcpip_adapter'
+make -C /home/shinu/esp/hello_world/build/smartconfig_ack -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/smartconfig_ack/component.mk COMPONENT_NAME=smartconfig_ack component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/spiffs'
+make -C /home/shinu/esp/hello_world/build/pthread -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/pthread/component.mk COMPONENT_NAME=pthread component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/spi_flash/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/smartconfig_ack'
+Building component project variables list /home/shinu/esp/hello_world/build/smartconfig_ack/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/spi_ram'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/pthread'
+make -C /home/shinu/esp/hello_world/build/protocomm -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/protocomm/component.mk COMPONENT_NAME=protocomm component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/protocomm'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/smartconfig_ack'
+Building component project variables list /home/shinu/esp/hello_world/build/pthread/component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/protocomm/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/spi_flash'
+make -C /home/shinu/esp/hello_world/build/protobuf-c -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/protobuf-c/component.mk COMPONENT_NAME=protobuf-c component_project_vars.mk
+make -C /home/shinu/esp/hello_world/build/partition_table -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/partition_table/component.mk COMPONENT_NAME=partition_table component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/partition_table'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/protobuf-c'
+Building component project variables list /home/shinu/esp/hello_world/build/protobuf-c/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/partition_table'
+make -C /home/shinu/esp/hello_world/build/openssl -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/openssl/component.mk COMPONENT_NAME=openssl component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/openssl'
+Building component project variables list /home/shinu/esp/hello_world/build/openssl/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/pthread'
+make -C /home/shinu/esp/hello_world/build/nvs_flash -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/nvs_flash/component.mk COMPONENT_NAME=nvs_flash component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/nvs_flash'
+Building component project variables list /home/shinu/esp/hello_world/build/nvs_flash/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/openssl'
+make -C /home/shinu/esp/hello_world/build/newlib -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/newlib/component.mk COMPONENT_NAME=newlib component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/newlib'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/protocomm'
+make -C /home/shinu/esp/hello_world/build/mqtt -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/mqtt/component.mk COMPONENT_NAME=mqtt component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/newlib/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/mqtt'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/protobuf-c'
+make -C /home/shinu/esp/hello_world/build/mdns -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/mdns/component.mk COMPONENT_NAME=mdns component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/mqtt/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/mdns'
+Building component project variables list /home/shinu/esp/hello_world/build/mdns/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/nvs_flash'
+make -C /home/shinu/esp/hello_world/build/mbedtls -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/component.mk COMPONENT_NAME=mbedtls component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/newlib'
+make -C /home/shinu/esp/hello_world/build/main -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/hello_world/main/component.mk COMPONENT_NAME=main component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/main'
+Building component project variables list /home/shinu/esp/hello_world/build/main/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/mbedtls'
+Building component project variables list /home/shinu/esp/hello_world/build/mbedtls/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/mqtt'
+make -C /home/shinu/esp/hello_world/build/lwip -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/component.mk COMPONENT_NAME=lwip component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/mdns'
+make -C /home/shinu/esp/hello_world/build/log -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/log/component.mk COMPONENT_NAME=log component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/log'
+Building component project variables list /home/shinu/esp/hello_world/build/log/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/lwip'
+Building component project variables list /home/shinu/esp/hello_world/build/lwip/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/main'
+make -C /home/shinu/esp/hello_world/build/libsodium -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/component.mk COMPONENT_NAME=libsodium component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/mbedtls'
+make -C /home/shinu/esp/hello_world/build/json -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/json/component.mk COMPONENT_NAME=json component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/json'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/log'
+make -C /home/shinu/esp/hello_world/build/jsmn -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/jsmn/component.mk COMPONENT_NAME=jsmn component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/json/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/jsmn'
+Building component project variables list /home/shinu/esp/hello_world/build/jsmn/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/lwip'
+make -C /home/shinu/esp/hello_world/build/http_parser -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/http_parser/component.mk COMPONENT_NAME=http_parser component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/http_parser'
+Building component project variables list /home/shinu/esp/hello_world/build/http_parser/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/json'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/libsodium'
+make -C /home/shinu/esp/hello_world/build/heap -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/heap/component.mk COMPONENT_NAME=heap component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/libsodium/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/heap'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/jsmn'
+make -C /home/shinu/esp/hello_world/build/freertos -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/component.mk COMPONENT_NAME=freertos component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/heap/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/freertos'
+Building component project variables list /home/shinu/esp/hello_world/build/freertos/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/http_parser'
+make -C /home/shinu/esp/hello_world/build/freemodbus -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/freemodbus/component.mk COMPONENT_NAME=freemodbus component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/libsodium'
+make -C /home/shinu/esp/hello_world/build/fatfs -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/component.mk COMPONENT_NAME=fatfs component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/fatfs'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/freemodbus'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/heap'
+make -C /home/shinu/esp/hello_world/build/esptool_py -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esptool_py/component.mk COMPONENT_NAME=esptool_py component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/fatfs/component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/freemodbus/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esptool_py'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esptool_py'
+make -C /home/shinu/esp/hello_world/build/esp_ringbuf -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/component.mk COMPONENT_NAME=esp_ringbuf component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/freertos'
+make -C /home/shinu/esp/hello_world/build/esp_https_ota -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp_https_ota/component.mk COMPONENT_NAME=esp_https_ota component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp_ringbuf'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp_https_ota'
+Building component project variables list /home/shinu/esp/hello_world/build/esp_https_ota/component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/esp_ringbuf/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/freemodbus'
+make -C /home/shinu/esp/hello_world/build/esp_http_server -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_server/component.mk COMPONENT_NAME=esp_http_server component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/fatfs'
+make -C /home/shinu/esp/hello_world/build/esp_http_client -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_client/component.mk COMPONENT_NAME=esp_http_client component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp_http_server'
+Building component project variables list /home/shinu/esp/hello_world/build/esp_http_server/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp_http_client'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp_https_ota'
+make -C /home/shinu/esp/hello_world/build/esp_gdbstub -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/component.mk COMPONENT_NAME=esp_gdbstub component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/esp_http_client/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp_gdbstub'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp_ringbuf'
+make -C /home/shinu/esp/hello_world/build/esp_event -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp_event/component.mk COMPONENT_NAME=esp_event component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/esp_gdbstub/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp_event'
+Building component project variables list /home/shinu/esp/hello_world/build/esp_event/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp_http_server'
+make -C /home/shinu/esp/hello_world/build/esp_common -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/component.mk COMPONENT_NAME=esp_common component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp_common'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp_http_client'
+Building component project variables list /home/shinu/esp/hello_world/build/esp_common/component_project_vars.mk
+make -C /home/shinu/esp/hello_world/build/esp8266 -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/component.mk COMPONENT_NAME=esp8266 component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp_gdbstub'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp8266'
+make -C /home/shinu/esp/hello_world/build/esp-wolfssl -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/component.mk COMPONENT_NAME=esp-wolfssl component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/esp8266/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp-wolfssl'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp_event'
+make -C /home/shinu/esp/hello_world/build/esp-tls -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls/component.mk COMPONENT_NAME=esp-tls component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/esp-wolfssl/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/esp-tls'
+Building component project variables list /home/shinu/esp/hello_world/build/esp-tls/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp_common'
+make -C /home/shinu/esp/hello_world/build/console -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/console/component.mk COMPONENT_NAME=console component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp-wolfssl'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp8266'
+make -C /home/shinu/esp/hello_world/build/coap -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/coap/component.mk COMPONENT_NAME=coap component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/console'
+make -C /home/shinu/esp/hello_world/build/bootloader_support -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/component.mk COMPONENT_NAME=bootloader_support component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/console/component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/bootloader_support'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/coap'
+Building component project variables list /home/shinu/esp/hello_world/build/bootloader_support/component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/coap/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/esp-tls'
+make -C /home/shinu/esp/hello_world/build/bootloader -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/component.mk COMPONENT_NAME=bootloader component_project_vars.mk
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/bootloader'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/console'
+make -C /home/shinu/esp/hello_world/build/app_update -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/component.mk COMPONENT_NAME=app_update component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader_support'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader'
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/coap'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/app_update'
+Project is not inside a git repository, or git repository has no commits
+will not use 'git describe' to determine PROJECT_VER.
+App "hello-world" version: 1
+Building component project variables list /home/shinu/esp/hello_world/build/app_update/component_project_vars.mk
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/app_update'
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/partition_table/Makefile.projbuild...
+PROJECT_PATH= COMPONENT_DIRS= make -C /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject V=1 BUILD_DIR_BASE=/home/shinu/esp/hello_world/build/bootloader TEST_COMPONENTS= TESTS_ALL= /home/shinu/esp/hello_world/build/bootloader/bootloader.bin
+python /home/shinu/esp/ESP8266_RTOS_SDK/tools/check_python_dependencies.py
+Building partitions from /home/shinu/esp/ESP8266_RTOS_SDK/components/partition_table/partitions_singleapp.csv...
+python /home/shinu/esp/ESP8266_RTOS_SDK/components/partition_table/gen_esp32part.py -q "--disable-md5sum" --flash-size "2MB" --offset 0x8000  /home/shinu/esp/ESP8266_RTOS_SDK/components/partition_table/partitions_singleapp.csv /home/shinu/esp/hello_world/build/partitions_singleapp.bin
+make[1]: Entering directory '/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject'
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild...
+WARNING: Toolchain version is not supported: 1.20.0
+Expected to see version: esp-2020r3-49-gd5524c1
+Please check ESP-IDF setup instructions and update the toolchain, or proceed at your own risk.
+WARNING: Compiler version is not supported: 4.8.2
+Expected to see version(s): 8.4.0
+Please check ESP-IDF setup instructions and update the toolchain, or proceed at your own risk.
+make -C /home/shinu/esp/hello_world/build/bootloader/esp8266 -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/component.mk COMPONENT_NAME=esp8266 component_project_vars.mk
+make -C /home/shinu/esp/hello_world/build/bootloader/log -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/log/component.mk COMPONENT_NAME=log component_project_vars.mk
+make -C /home/shinu/esp/hello_world/build/bootloader/spi_flash -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/component.mk COMPONENT_NAME=spi_flash component_project_vars.mk
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/log'
+Building component project variables list /home/shinu/esp/hello_world/build/bootloader/log/component_project_vars.mk
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/spi_flash'
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/esp8266'
+Building component project variables list /home/shinu/esp/hello_world/build/bootloader/spi_flash/component_project_vars.mk
+Building component project variables list /home/shinu/esp/hello_world/build/bootloader/esp8266/component_project_vars.mk
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/log'
+make -C /home/shinu/esp/hello_world/build/bootloader/bootloader_support -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/component.mk COMPONENT_NAME=bootloader_support component_project_vars.mk
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/bootloader_support'
+Building component project variables list /home/shinu/esp/hello_world/build/bootloader/bootloader_support/component_project_vars.mk
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/spi_flash'
+make -C /home/shinu/esp/hello_world/build/bootloader/main -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/component.mk COMPONENT_NAME=main component_project_vars.mk
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/bootloader_support'
+make -C /home/shinu/esp/hello_world/build/bootloader/esptool_py -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/esptool_py/component.mk COMPONENT_NAME=esptool_py component_project_vars.mk
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/esptool_py'
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/main'
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/esp8266'
+Building component project variables list /home/shinu/esp/hello_world/build/bootloader/main/component_project_vars.mk
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/esptool_py'
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/main'
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esptool_py/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/Makefile.projbuild...
+including /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/Makefile.projbuild...
+Python requirements from /home/shinu/esp/ESP8266_RTOS_SDK/requirements.txt are satisfied.
+make -C /home/shinu/esp/hello_world/build/bootloader/main -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/component.mk COMPONENT_NAME=main build
+make -C /home/shinu/esp/hello_world/build/bootloader/bootloader_support -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/component.mk COMPONENT_NAME=bootloader_support build
+make -C /home/shinu/esp/hello_world/build/bootloader/spi_flash -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/component.mk COMPONENT_NAME=spi_flash build
+make -C /home/shinu/esp/hello_world/build/bootloader/log -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/log/component.mk COMPONENT_NAME=log build
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/main'
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -D BOOTLOADER_BUILD=1 -I/home/shinu/esp/hello_world/build/bootloader/../include -DICACHE_FLASH -D__ESP_FILE__='"bootloader_start.c"' -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS  -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/hello_world/build/bootloader/include  -I . -c /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/bootloader_start.c -o bootloader_start.o
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/log'
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/spi_flash'
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -D BOOTLOADER_BUILD=1 -I/home/shinu/esp/hello_world/build/bootloader/../include -DICACHE_FLASH -D__ESP_FILE__='"spi_flash.c"' -DPARTITION_QUEUE_HEADER=\"sys/queue.h\" -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS  -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/hello_world/build/bootloader/include  -I src -c /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/src/spi_flash.c -o src/spi_flash.o
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -D BOOTLOADER_BUILD=1 -I/home/shinu/esp/hello_world/build/bootloader/../include -DICACHE_FLASH -D__ESP_FILE__='"log.c"' -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS  -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/hello_world/build/bootloader/include  -I . -c /home/shinu/esp/ESP8266_RTOS_SDK/components/log/log.c -o log.o
+/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/bootloader_start.c:17:20: fatal error: string.h: No such file or directory
+make[2]: Entering directory '/home/shinu/esp/hello_world/build/bootloader/bootloader_support'
+ #include <string.h>
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -D BOOTLOADER_BUILD=1 -I/home/shinu/esp/hello_world/build/bootloader/../include -DICACHE_FLASH -D__ESP_FILE__='"efuse.c"' -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS  -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/hello_world/build/bootloader/include  -I src -c /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/efuse.c -o src/efuse.o
+                    ^
+/home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk:291: recipe for target 'bootloader_start.o' failed
+compilation terminated.
+make[2]: *** [bootloader_start.o] Error 1
+make[1]: *** [component-main-build] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/src/spi_flash.c:15:20: fatal error: string.h: No such file or directory
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/main'
+/home/shinu/esp/ESP8266_RTOS_SDK/make/project.mk:571: recipe for target 'component-main-build' failed
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -D BOOTLOADER_BUILD=1 -I/home/shinu/esp/hello_world/build/bootloader/../include -DICACHE_FLASH -D__ESP_FILE__='"bootloader_flash.c"' -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS  -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/hello_world/build/bootloader/include  -I src -c /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_flash.c -o src/bootloader_flash.o
+/home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk:291: recipe for target 'src/spi_flash.o' failed
+ #include <string.h>
+                    ^
+compilation terminated.
+make[2]: *** [src/spi_flash.o] Error 1
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/spi_flash'
+/home/shinu/esp/ESP8266_RTOS_SDK/make/project.mk:571: recipe for target 'component-spi_flash-build' failed
+make[1]: *** [component-spi_flash-build] Error 2
+In file included from /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_flash.c:261:0:
+/home/shinu/Documents/Espressif/crosstool-NG/builds/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.2/include/stdint.h:9:26: fatal error: stdint.h: No such file or directory
+ # include_next <stdint.h>
+                          ^
+compilation terminated.
+/home/shinu/esp/ESP8266_RTOS_SDK/components/log/log.c:16:20: fatal error: stdlib.h: No such file or directory
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -D BOOTLOADER_BUILD=1 -I/home/shinu/esp/hello_world/build/bootloader/../include -DICACHE_FLASH -D__ESP_FILE__='"flash_qio_mode.c"' -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS  -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/hello_world/build/bootloader/include  -I src -c /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/flash_qio_mode.c -o src/flash_qio_mode.o
+ #include <stdlib.h>
+                    ^
+compilation terminated.
+make[2]: *** [log.o] Error 1
+make[2]: *** [src/bootloader_flash.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk:291: recipe for target 'log.o' failed
+/home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk:291: recipe for target 'src/bootloader_flash.o' failed
+make[1]: *** [component-log-build] Error 2
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/log'
+/home/shinu/esp/ESP8266_RTOS_SDK/make/project.mk:571: recipe for target 'component-log-build' failed
+make -C /home/shinu/esp/hello_world/build/app_update -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/component.mk COMPONENT_NAME=app_update build
+make -C /home/shinu/esp/hello_world/build/bootloader_support -f /home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk COMPONENT_MAKEFILE=/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/component.mk COMPONENT_NAME=bootloader_support build
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/app_update'
+make[1]: Entering directory '/home/shinu/esp/hello_world/build/bootloader_support'
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -DICACHE_FLASH -D__ESP_FILE__='"efuse.c"' -DAPP_OFFSET=0x10000 -DAPP_SIZE=0xf0000 -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/coap/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/console -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls/private_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_event/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_client/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_server/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_https_ota/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/diskio -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/vfs -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/src -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freemodbus/common/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/heap/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/http_parser/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/jsmn/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/json/cJSON -I /home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/libsodium/src/libsodium/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/port_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/include/apps -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/include/apps/sntp -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arch -I /home/shinu/esp/hello_world/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mdns/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/newlib/platform_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/nvs_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/openssl/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/protobuf-c/protobuf-c -I /home/shinu/esp/ESP8266_RTOS_SDK/components/pthread/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/smartconfig_ack/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_ram/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spiffs/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcp_transport/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/vfs/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wear_levelling/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/port/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include/esp_supplicant -I /home/shinu/esp/hello_world/build/include  -I src -c /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/efuse.c -o src/efuse.o
+Project is not inside a git repository, or git repository has no commits
+will not use 'git describe' to determine PROJECT_VER.
+App "hello-world" version: 1
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -DICACHE_FLASH -D__ESP_FILE__='"esp_ota_ops.c"' -DAPP_OFFSET=0x10000 -DAPP_SIZE=0xf0000 -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS -I /home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/coap/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/console -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls/private_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_event/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_client/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_server/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_https_ota/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/diskio -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/vfs -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/src -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freemodbus/common/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/heap/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/http_parser/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/jsmn/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/json/cJSON -I /home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/libsodium/src/libsodium/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/port_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/include/apps -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/include/apps/sntp -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arch -I /home/shinu/esp/hello_world/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mdns/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/newlib/platform_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/nvs_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/openssl/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/protobuf-c/protobuf-c -I /home/shinu/esp/ESP8266_RTOS_SDK/components/pthread/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/smartconfig_ack/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_ram/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spiffs/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcp_transport/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/vfs/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wear_levelling/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/port/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include/esp_supplicant -I /home/shinu/esp/hello_world/build/include  -I . -c /home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/esp_ota_ops.c -o esp_ota_ops.o
+In file included from /home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/esp_ota_ops.c:15:0:
+/home/shinu/Documents/Espressif/crosstool-NG/builds/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.2/include/stdint.h:9:26: fatal error: stdint.h: No such file or directory
+/home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk:291: recipe for target 'esp_ota_ops.o' failed
+ # include_next <stdint.h>
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/app_update'
+/home/shinu/esp/ESP8266_RTOS_SDK/make/project.mk:571: recipe for target 'component-app_update-build' failed
+                          ^
+xtensa-lx106-elf-gcc -std=gnu99 -Og -ggdb -Wno-frame-address -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -mlongcalls -nostdlib -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-but-set-variable -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-old-style-declaration -DICACHE_FLASH -D__ESP_FILE__='"bootloader_flash.c"' -DAPP_OFFSET=0x10000 -DAPP_SIZE=0xf0000 -DESP_PLATFORM -D IDF_VER=\"v3.4-dev-357-g3aeaa893\" -MMD -MP   -D_GNU_SOURCE -DGCC_NOT_5_2_0=1 -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"' -DCONFIG_SSL_USING_MBEDTLS -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include_priv -I /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/app_update/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/coap/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/console -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-tls/private_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp-wolfssl/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_common/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_event/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_gdbstub/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_client/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_http_server/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_https_ota/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/esp_ringbuf/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/diskio -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/vfs -I /home/shinu/esp/ESP8266_RTOS_SDK/components/fatfs/src -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freemodbus/common/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/private -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/freertos -I /home/shinu/esp/ESP8266_RTOS_SDK/components/heap/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/heap/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/http_parser/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/jsmn/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/json/cJSON -I /home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/libsodium/src/libsodium/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/libsodium/port_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/log/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/include/apps -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/include/apps/sntp -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/lwip/src/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/lwip/port/esp8266/include/arch -I /home/shinu/esp/hello_world/main/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mbedtls/port/include/esp8266 -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mdns/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/newlib/platform_include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/nvs_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/openssl/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/protobuf-c/protobuf-c -I /home/shinu/esp/ESP8266_RTOS_SDK/components/pthread/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/smartconfig_ack/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_flash/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spi_ram/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/spiffs/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcp_transport/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/tcpip_adapter/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/vfs/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wear_levelling/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/port/include -I /home/shinu/esp/ESP8266_RTOS_SDK/components/wpa_supplicant/include/esp_supplicant -I /home/shinu/esp/hello_world/build/include  -I src -c /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_flash.c -o src/bootloader_flash.o
+compilation terminated.
+make[1]: *** [esp_ota_ops.o] Error 1
+make: *** [component-app_update-build] Error 2
+make: *** Waiting for unfinished jobs....
+In file included from /home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/bootloader_flash.c:261:0:
+/home/shinu/Documents/Espressif/crosstool-NG/builds/xtensa-lx106-elf/lib/gcc/xtensa-lx106-elf/4.8.2/include/stdint.h:9:26: fatal error: stdint.h: No such file or directory
+ # include_next <stdint.h>
+                          ^
+compilation terminated.
+/home/shinu/esp/ESP8266_RTOS_SDK/make/component_wrapper.mk:291: recipe for target 'src/bootloader_flash.o' failed
+make[1]: *** [src/bootloader_flash.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+echo "/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/efuse.c:" >> src/efuse.d
+echo "/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/efuse.c:" >> src/efuse.d
+make: *** [component-bootloader_support-build] Error 2
+echo "/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader_support/src/flash_qio_mode.c:" >> src/flash_qio_mode.d
+make[1]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader_support'
+/home/shinu/esp/ESP8266_RTOS_SDK/make/project.mk:571: recipe for target 'component-bootloader_support-build' failed
+make[1]: *** [component-bootloader_support-build] Error 2
+make[2]: Leaving directory '/home/shinu/esp/hello_world/build/bootloader/bootloader_support'
+/home/shinu/esp/ESP8266_RTOS_SDK/make/project.mk:571: recipe for target 'component-bootloader_support-build' failed
+make[1]: Leaving directory '/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/subproject'
+/home/shinu/esp/ESP8266_RTOS_SDK/components/bootloader/Makefile.projbuild:40: recipe for target '/home/shinu/esp/hello_world/build/bootloader/bootloader.bin' failed
+make: *** [/home/shinu/esp/hello_world/build/bootloader/bootloader.bin] Error 2
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+01:20:54 Build Failed. 36 errors, 0 warnings. (took 1s.671ms)
+

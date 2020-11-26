@@ -1,0 +1,218 @@
+dice value is : 8 
+ To win dice value is : 8 
+dice value is : 12 
+dice value is : 8 
+player wins
+
+------------------
+
+
+dice value is : 4 
+ To win dice value is : 4 
+dice value is : 3 
+dice value is : 6 
+dice value is : 2 
+dice value is : 8 
+dice value is : 5 
+dice value is : 3 
+dice value is : 10 
+dice value is : 9 
+dice value is : 7 
+player loose
+
+------------------
+
+
+dice value is : 5 
+ To win dice value is : 5 
+dice value is : 9 
+dice value is : 6 
+dice value is : 11 
+dice value is : 12 
+dice value is : 4 
+dice value is : 2 
+dice value is : 12 
+dice value is : 10 
+dice value is : 7 
+player loose
+
+------------------
+
+
+dice value is : 2 
+player loose
+
+------------------
+
+
+dice value is : 6 
+ To win dice value is : 6 
+dice value is : 8 
+dice value is : 2 
+dice value is : 12 
+dice value is : 5 
+dice value is : 12 
+dice value is : 12 
+dice value is : 9 
+dice value is : 12 
+dice value is : 5 
+dice value is : 9 
+dice value is : 11 
+dice value is : 9 
+dice value is : 10 
+dice value is : 4 
+dice value is : 12 
+dice value is : 9 
+dice value is : 12 
+dice value is : 6 
+player wins
+
+------------------
+
+
+dice value is : 3 
+player loose
+
+------------------
+
+
+dice value is : 2 
+player loose
+
+------------------
+
+
+dice value is : 12 
+player loose
+
+------------------
+
+
+dice value is : 6 
+ To win dice value is : 6 
+dice value is : 11 
+dice value is : 9 
+dice value is : 8 
+dice value is : 10 
+dice value is : 8 
+dice value is : 4 
+dice value is : 4 
+dice value is : 9 
+dice value is : 8 
+dice value is : 8 
+dice value is : 7 
+player loose
+
+------------------
+
+
+dice value is : 7 
+player wins
+
+------------------
+
+
+dice value is : 9 
+ To win dice value is : 9 
+dice value is : 6 
+dice value is : 6 
+dice value is : 6 
+dice value is : 5 
+dice value is : 8 
+dice value is : 11 
+dice value is : 12 
+dice value is : 4 
+dice value is : 6 
+dice value is : 3 
+dice value is : 2 
+dice value is : 12 
+dice value is : 11 
+dice value is : 6 
+dice value is : 2 
+dice value is : 12 
+dice value is : 3 
+dice value is : 4 
+dice value is : 8 
+dice value is : 11 
+dice value is : 9 
+player wins
+
+------------------
+
+
+dice value is : 3 
+player loose
+
+------------------
+
+
+dice value is : 6 
+ To win dice value is : 6 
+dice value is : 11 
+dice value is : 5 
+dice value is : 11 
+dice value is : 4 
+dice value is : 12 
+dice value is : 5 
+dice value is : 9 
+dice value is : 8 
+dice value is : 10 
+dice value is : 11 
+dice value is : 10 
+dice value is : 11 
+dice value is : 6 
+player wins
+
+------------------
+
+
+dice value is : 7 
+player wins
+
+------------------
+
+
+dice value is : 11 
+player wins
+
+------------------
+
+
+dice value is : 7 
+player wins
+
+------------------
+
+
+dice value is : 11 
+player wins
+
+------------------
+
+
+dice value is : 10 
+ To win dice value is : 10 
+dice value is : 5 
+dice value is : 10 
+player wins
+
+------------------
+
+
+dice value is : 9 
+ To win dice value is : 9 
+dice value is : 7 
+player loose
+
+------------------
+
+
+dice value is : 9 
+ To win dice value is : 9 
+dice value is : 6 
+dice value is : 9 
+player wins
+
+------------------
+
+

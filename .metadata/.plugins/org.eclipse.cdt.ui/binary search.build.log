@@ -1,0 +1,6 @@
+22:04:50 **** Incremental Build of configuration Release for project binary search ****
+make all 
+make: Nothing to be done for 'all'.
+
+22:04:50 Build Finished. 0 errors, 0 warnings. (took 74ms)
+
